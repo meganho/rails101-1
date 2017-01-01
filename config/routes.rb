@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  member do
+        post :join
+        post :quit
+      end
+
   devise_for :users
   resources :groups do
    resources :posts
